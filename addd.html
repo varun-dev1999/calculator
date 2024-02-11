@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    
+    <script>
+        var sum=0;
+        function add() {
+            var val1=parseInt(document.getElementById("value1").value);
+            var val2=parseInt(document.getElementById("value2").value);
+            // sum=(val1)+(val2);
+            sum=val1+val2;
+            document.getElementById("result").value=sum;
+
+        }
+    </script>
+
+</head>
+<body>
+    <form style="text-align: center;">
+        <h1>Calculator</h1>
+        <p><b>value1:</b><input type="number" id="value1"></p>
+        <p><b>value2:</b><input type="number" id="value2"></p>
+        <!-- <p><input type="submit" onclick="add()"></p> -->
+        <button id="button" onclick="add()"><b>submit</b></button>
+        <p><input id="result"></p>
+
+    </form>
+</body>
+</html>
